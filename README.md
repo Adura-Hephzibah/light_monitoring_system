@@ -53,3 +53,5 @@ The system consists of three NodeMCU devices installed in separate rooms. Each d
 3. Ensure that data is logged in the Firebase Realtime Database, and the web app fetches and displays this data in real-time.
 
 
+## Video Demo
+[Link to video demo](https://drive.google.com/file/d/1tP4qcQOqwGqdLLtGYvbjYaBl0XFT9Axk/view?usp=sharing)
