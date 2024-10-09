@@ -38,7 +38,7 @@ git clone https://github.com/yourusername/light-monitoring-system.git
 ## Designs
 
 - Figma Mockup:
-![Figma Mockups](assests/FRAME%201.jpg)
+    ![Figma Mockups](assests/FRAME%201.jpg)
 
 - Circuit Diagram:
   ![Circuit Diagram](assests/circuit.png)
