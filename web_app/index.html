@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Light Monitoring System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="main-title">Light Monitoring System</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <h2 class="room-title">Living Room</h2>
+      <p class="subtitle">Monitor the light status in real-time</p>
+      <div id="lightStatus" class="status-box">
+        <div id="loadingIndicator" class="loading">Loading...</div>
+      </div>
+      <div class="timestamps">
+        <p id="date"></p>
+        <p id="time1"></p>
+        <p id="time2"></p>
+      </div>
+      <footer>Last updated in real-time</footer>
+    </div>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+  <a href="dashboard.html" class="dashboard-link">View Dashboard</a>
+</body>
+</html>

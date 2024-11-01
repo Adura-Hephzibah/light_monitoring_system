@@ -21,7 +21,7 @@ The system sends notifications to the user if the light is left on when no motio
 ### Steps:
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/light-monitoring-system.git
+git clone https://github.com/Adura-Hephzibah/light_monitoring_system.git
 ```
 
 2. Open the project in Arduino IDE and install the following libraries:
