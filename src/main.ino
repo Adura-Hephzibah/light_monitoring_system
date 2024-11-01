@@ -17,19 +17,19 @@
 #include <addons/RTDBHelper.h>
 
 // Insert your network credentials
-#define WIFI_SSID "CANALBOX-0B88-2G"
-#define WIFI_PASSWORD "4Gvrwa3hEL"
+#define WIFI_SSID "USE_YOUR_WIFI_NAME"
+#define WIFI_PASSWORD "YOUR_WIFI_PASSWORD"
 
 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyDDbn4WgY5OvX519fSU1xFedQ_YwT3SJKE"
+#define API_KEY "USE_YOUR_KEY"
 
 // Insert Realtime Database URL
 #define DATABASE_URL "light-monitoring-system-28c78-default-rtdb.europe-west1.firebasedatabase.app/"  // Without "https://"
 
 //Define the user Email and password that already registerd or added in your project
-#define USER_EMAIL "h.ihesie@alustudent.com"
-#define USER_PASSWORD "esptryout1"
+#define USER_EMAIL "YOUR_EMAIL"
+#define USER_PASSWORD "YOUR_PASSWORD"
 
 //Define Firebase Data object
 FirebaseData fbdo;

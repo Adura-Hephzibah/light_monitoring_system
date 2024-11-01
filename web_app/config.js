@@ -1,6 +1,6 @@
 // Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDDbn4WgY5OvX519fSU1xFedQ_YwT3SJKE",
+  apiKey: "USE_YOUR_KEY",
   authDomain: "light-monitoring-system-28c78.firebaseapp.com",
   databaseURL: "https://light-monitoring-system-28c78-default-rtdb.europe-west1.firebasedatabase.app",
   projectId: "light-monitoring-system-28c78",
