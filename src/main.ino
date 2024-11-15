@@ -146,6 +146,16 @@ void checkmotion() {
   bool motionDetected = false;  // Track if motion has been detected
 
   for (int i = 0; i < 1800; i++) {  // Monitor for 1800 seconds (30 minutes)
+    // First check LDR reading
+    int ldrStatus = analogRead(ldrPin);
+
+    // If room is dark, exit the function completely
+    if (ldrStatus < 120) {  // Dark condition
+        Serial.printf("Room is dark (LDR: %d). Stopping monitoring.\n", ldrStatus);
+        digitalWrite(led, LOW);
+        return;  // Exit function, don't send any message
+    }
+
     if (digitalRead(sensor) == HIGH) {  // Motion detected
       motionDetected = true;  // Set flag to indicate motion was detected
       digitalWrite(led, HIGH);  // Turn LED on
