@@ -115,21 +115,11 @@ void checktime() {
   if (now.hour() >= 7 && now.hour() < 18) {  // Working hours: 7 AM - 6 PM
     Serial.println("Working hours");
     Serial.println("Waiting for night cycle");
-    // checklight1();
   } else {
     Serial.println("Non-working hours");
     checklight2();
   }
 
-}
-void checklight1() {
-  int ldrStatus = analogRead(ldrPin);
-  if (ldrStatus >= 700) {
-    Serial.println("LED bulb ON");
-    checkmotion();
-  } else {
-    Serial.printf("%d - LED OFF\n", ldrStatus);
-  }
 }
 
 void checklight2() {
