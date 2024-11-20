@@ -11,9 +11,14 @@
     <h1 class="main-title">Light Monitoring System</h1>
   </header>
 
+  <nav class="navigation-bar">
+    <a href="analytics.html" class="analytics-link">View Analytics</a>
+    <a href="logs.html" class="logs-link">View Logs</a>
+  </nav>
+
   <main>
     <div class="container">
-      <h2 class="room-title">Living Room</h2>
+      <h2 class="room-title">Alert</h2>
       <p class="subtitle">Monitor the light status in real-time</p>
       <div id="lightStatus" class="status-box">
         <div id="loadingIndicator" class="loading">Loading...</div>
@@ -31,6 +36,5 @@
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
   <script src="config.js"></script>
   <script src="app.js"></script>
-  <a href="dashboard.html" class="dashboard-link">View Dashboard</a>
 </body>
 </html>

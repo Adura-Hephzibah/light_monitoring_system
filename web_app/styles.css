@@ -86,7 +86,7 @@ footer {
   color: #666;
 }
 
-.home-link, .dashboard-link {
+.home-link, .dashboard-link, .analytics-link, .logs-link {
   display: inline-block;
   margin-top: 20px;
   padding: 10px 15px;
@@ -97,6 +97,255 @@ footer {
   transition: background-color 0.3s ease;
 }
 
-.home-link:hover, .dashboard-link:hover {
+.home-link:hover, .dashboard-link:hover, .analytics-link:hover, .logs-link:hover {
   background-color: #45a049;
+}
+
+/* Add this to styles.css */
+#chartContainer {
+    width: 100%; /* Make it responsive */
+    max-width: 800px; /* Set a maximum width */
+    margin: 20px auto; /* Center the chart */
+    margin-top: 20px; /* Space between the cost box and the charts */
+}
+
+#lightChart {
+    width: 100% !important; /* Make the canvas responsive */
+    height: 400px !important; /* Set a fixed height */
+}
+
+.navigation-buttons {
+    position: fixed; /* Fixes the position relative to the viewport */
+    bottom: 20px; /* Distance from the bottom */
+    left: 20px; /* Distance from the left */
+    display: flex; /* Aligns buttons in a row */
+    gap: 10px; /* Space between buttons */
+}
+
+.home-link, .dashboard-link, .analytics-link, .logs-link {
+    padding: 10px 15px; /* Padding for buttons */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+.home-link:hover, .dashboard-link:hover, .analytics-link:hover, .logs-link:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Add this to styles.css */
+#totalCostBox {
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the box */
+    margin-top: 20px; /* Space above the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center; /* Center text */
+}
+
+#totalCostBox h2 {
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Font size for the title */
+    color: #333; /* Dark text color */
+}
+
+#totalCostBox p {
+    font-size: 20px; /* Font size for the cost */
+    color: #4CAF50; /* Green color for the cost */
+    font-weight: bold; /* Bold text */
+}
+
+/* Add this to styles.css */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+/* Basic styling for the filter container FOR ANALYTICS PAGE */
+.filter-container {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+    margin-bottom: 20px; /* Space below the filter container */
+}
+
+/* Style for filter labels and inputs FOR ANALYTICS PAGE */
+.filter-container label {
+    font-weight: bold; /* Bold text for labels */
+    margin-bottom: 5px; /* Space below labels */
+}
+
+/* Style for the chart container */
+#chartContainer {
+    width: 100%; /* Make it responsive */
+    max-width: 800px; /* Set a maximum width */
+    margin: 20px auto; /* Center the chart */
+}
+
+/* Ensure the charts are responsive FOR ANALYTICS PAGE */
+#allDataChart, #lightChart {
+    width: 100% !important; /* Make the canvas responsive */
+    height: 400px !important; /* Set a fixed height */
+}
+
+/* Style for the table container */
+.table-container {
+    overflow-x: auto; /* Allow horizontal scrolling on small screens */
+    margin-top: 20px; /* Space above the table */
+}
+
+/* Style for the table */
+#logsTable {
+    width: 100%; /* Full width of the container */
+    min-width: 600px; /* Set a minimum width to trigger scrolling on small screens */
+    border-collapse: collapse; /* Remove space between borders */
+}
+
+/* Header styles */
+#logsTable th {
+    background-color: #4CAF50; /* Header background color */
+    color: white; /* Header text color */
+    padding: 12px; /* Padding for header cells */
+    text-align: left; /* Align text to the left */
+    font-weight: bold; /* Bold text for header */
+}
+
+/* Cell styles */
+#logsTable td {
+    border: 1px solid #ddd; /* Light gray border */
+    padding: 10px; /* Padding inside cells */
+    text-align: left; /* Align text to the left */
+    transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+/* Zebra striping for rows */
+#logsTable tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray for even rows */
+}
+
+#logsTable tr:hover {
+    background-color: #f1f1f1; /* Highlight row on hover */
+}
+
+.navigation-buttons {
+    margin-top: 20px; /* Space above navigation */
+    text-align: center; /* Center the navigation links */
+}
+
+.navigation-buttons a {
+    margin: 0 10px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+    color: #007BFF; /* Bootstrap primary color */
+}
+
+.navigation-buttons a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.navigation-bar {
+    display: flex; /* Align links in a row */
+    justify-content: center; /* Center the links */
+    background-color: #4CAF50; /* Background color */
+    padding: 10px 0; /* Padding for the nav bar */
+}
+
+.navigation-bar a {
+    margin: 0 15px; /* Space between links */
+    color: white; /* Link text color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Bold text */
+}
+
+.navigation-bar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Style for the filter-table-container */
+.filter-table-container {
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Padding inside the container */
+    margin: 20px auto; /* Center the container with margin */
+    max-width: 800px; /* Maximum width for the container */
+    width: 100%; /* Allow the container to take up 90% of the screen width */
+}
+
+/* Basic styling for the filter container */
+.filter-container-log {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below the filter container */
+}
+
+/* Style for filter labels and inputs */
+.filter-container label {
+    font-weight: bold; /* Bold text for labels */
+    margin-right: 10px; /* Space between label and input */
+}
+
+.filter-container input[type="date"] {
+    padding: 8px; /* Padding inside date input */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 4px; /* Rounded corners for inputs */
+    width: 150px; /* Fixed width for date inputs */
+}
+
+/* Style for the filter button */
+#filterButton {
+    padding: 10px 15px; /* Padding for the button */
+    background-color: #4CAF50; /* Button background color */
+    color: white; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition effect */
+}
+
+#filterButton:hover {
+    background-color: #45a049; /* Darker shade on hover */
+}
+
+/* Media query for small screens */
+@media (max-width: 600px) {
+    .filter-container {
+        flex-direction: column; /* Stack elements vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+
+    .filter-container label {
+        margin-bottom: 5px; /* Space below labels */
+    }
+
+    .filter-container input[type="date"] {
+        width: 100%; /* Full width for date inputs */
+        margin-bottom: 10px; /* Space below inputs */
+    }
+
+    #filterButton {
+        width: 100%; /* Full width for the button */
+    }
 }

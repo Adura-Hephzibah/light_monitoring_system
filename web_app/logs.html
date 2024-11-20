@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Monitoring System - Logs</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="config.js"></script>
+    <script src="logs.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Light Monitoring System - Logs</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <a href="index.html" class="home-link">Back to Home</a>
+        <a href="analytics.html" class="analytics-link">View Analytics</a>
+        </nav>
+
+    <main>
+        <div class="filter-table-container">
+            <div class="filter-container-log">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" />
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" />
+                <button id="filterButton">Filter</button>
+            </div>
+
+            <div class="table-container">
+                <table id="logsTable">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Time From</th>
+                            <th>Time To</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Log entries will be populated here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
